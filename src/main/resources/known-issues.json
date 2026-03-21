@@ -1,2 +1,18 @@
 {
+"BUG-001": {
+        "type": "Internal",
+        "assertionPattern": ".*Expected: \"https:\\/\\/www.saucedemo.com\\/inventory.html\" Actual: was \"https:\\/\\/www.saucedemo.com\\/\".*",
+        "storyPattern": "Task_5.*",
+        "scenarioPattern": ".*Log in as a User.*",
+        "stepPattern": "Then \\`\\$\\{current-page-url\\}\\` is equal to \\`https:\\/\\/www.saucedemo.com\\/inventory.html\\`.*",
+        "description": "Locked user"
+    },
+"BUG-002": {
+        "type": "Internal",
+        "assertionPattern": ".*Expected: number of elements is a value equal to \\<6\\> Actual: \\<0\\>.*",
+        "storyPattern": "Task_5.*",
+        "scenarioPattern": ".*Log in as a User.*",
+        "stepPattern": "And number of elements found by \\`xpath\\(\\/\\/\\*\\[\\@data-test=\\'inventory-item\\'\\]\\)\\` is equal to \\`6\\`.*",
+        "description": "Locked user can't see images"
+    }    
 }
